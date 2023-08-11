@@ -1,177 +1,202 @@
 :root {
-    --main-color: #2c3e50;
+  --main-color: #2c3e50;
+}
+
+* {
+  text-decoration: none;
+  color: black;
 }
 
 body {
-    border: 2px none black;
-    height: 297mm;
-    width: 210mm;
-    margin: auto;
-    /* background-image: linear-gradient(to top left, #2c3e50, #bdc3c7); */
-    /* transition: .5s ease; */
+  border: 2px none black;
+  height: 100vh;
+  width: 210mm;
+  margin: auto;
 }
-
-
-/* body:hover {
-    box-shadow: 0 0 1rem var(--main-color);
-    transform: scale(1.05);
-} */
-
-
 @media only screen and (max-width: 800px) {
-    body {
-        width: 80%;
-    }
+  body {
+    width: 80%;
+  }
+  .personalInfo .straightLine {
+    display: none;
+  }
+  .personalInfo {
+    text-align: center;
+    line-height: 0.1px;
+    flex-direction: column;
+  }
+  .personalInfo a {
+    line-height: 12px;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        width: 90%;
-    }
+  body {
+    width: 95%;
+  }
+  .personalInfo .straightLine {
+    display: none;
+  }
+  .personalInfo {
+    text-align: center;
+    line-height: 0.1px;
+    flex-direction: column;
+  }
 }
-
-
 
 #hline {
-    border-top: 3px solid black;
-    margin: 40px;
+  border-top: 3px solid black;
+  margin: 40px;
 }
 
-.z {
-    border: 1px none red;
-    display: flex;
+.personalInfo {
+  display: flex;
+  justify-content: center;
+  translate: 0px -50px;
+}
+.personalInfo h4 {
+  padding: 3px;
+  font-size: 1.5rem;
 }
 
 .a {
-    border: 1px;
-    width: 520px;
-    text-decoration: none;
-}
-
-.b {
-    color: black;
-    padding: 2px;
-    font-size: x-large;
-    font-weight: bolder;
+  border: 1px;
+  width: 520px;
+  text-decoration: none;
 }
 
 .container {
-    border: 2px none red;
-    position: relative;
-    top: -35px;
-    display: flex;
+  border: 2px none red;
+  /* position: relative; */
+  translate: 0px -40px;
+  display: flex;
 }
 
-
-
 .div1 {
-    border: 2px none blue;
-    height: 955px;
-    width: 400px;
+  border: 2px none blue;
+  height: 955px;
+  width: 400px;
 }
 
 .div2 {
-    border: 2px none green;
-    height: 955px;
-    width: 600px;
+  border: 2px none green;
+  height: 955px;
+  width: 600px;
 }
 
 #hhline {
-    border-top: 1px solid black;
-    margin: 35px;
+  border-top: 1px solid black;
+  margin: 35px;
+}
+#headingLine {
+  border-top: 3px solid black;
+  margin: 5px;
+  translate: 0px -60px;
+}
+.programmingLanguages h3 {
+  margin-left: 20px;
 }
 
 .vl {
-    border: 1px solid black;
-    height: 865px;
-    margin: 5px
+  border: 1px solid black;
+  height: 890px;
+  margin: 5px;
 }
 
-
 button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 button.learn-more {
-    width: 12rem;
-    height: auto;
+  width: 12rem;
+  height: auto;
 }
 
 button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #282936;
-    border-radius: 1.625rem;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
 }
 
 button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
 }
 
 button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
 }
 
 button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.29rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
 }
 
 button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #282936;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 button:hover .circle {
-    width: 100%;
+  width: 100%;
 }
 
 button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
+  background: #fff;
+  transform: translate(1rem, 0);
 }
 
 button:hover .button-text {
-    color: #fff;
+  color: #fff;
+}
+
+.languagesUsedFormakingprojects {
+  font-size: 15px;
+  font-weight: 600;
+}
+.ClickHere {
+  color: blue;
+  text-decoration: underline;
 }
